@@ -5,7 +5,7 @@ ARG GITHUB_API_TOKEN
 RUN apt-get update && \
     apt-get install -y git && \
     apt-get install -y cloc && \
-    apt-get clean
+    apt-get autoremove
 
 RUN mkdir /nist-software-bot
 COPY . /nist-software-bot
