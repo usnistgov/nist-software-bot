@@ -1,10 +1,10 @@
 #!/bin/bash
 # Run this script to refresh all data for today
 
-exec &> >(tee ../LAST_MASTER_UPDATE.log)
+exec &> >(tee /nist-software-bot/LAST_MASTER_UPDATE.log)
 
-export GITHUB_DATA=../github-data
-DATELOG=../LAST_MASTER_UPDATE.txt
+export GITHUB_DATA=/nist-software-bot/github-data
+DATELOG=/nist-software-bot/LAST_MASTER_UPDATE.txt
 
 # On exit
 function finish {
